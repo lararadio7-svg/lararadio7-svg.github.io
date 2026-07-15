@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk' , 'Source Sans 3'
+}
+
+
+body{
+   background-image: url('https://i.pinimg.com/1200x/2c/e1/f2/2ce1f2e7a7491328b5bcf3b46e0a3eec.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+p{
+    font-family: helvetica;
+    text-align: justify;
+}
+
+h1 {
+font-family: "Pixelify Sans" ;
+text-align: center;
+
+}
+
+
+.main-container {
+    width: 90%;
+    max-width: 900px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.header-banner {
+    background-color: #FFA6C9; 
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #000;
+}
+
+ 
+.layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 15px;
+}
+
+
+.sidebar {
+    background-color: #ffffff;
+    border: 2px solid #000;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.seccion-titulo {
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.boton {
+    display: block;
+    text-align: center;
+    background-color: #90EE90;
+    color: #000;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    transition: background 0.2s;
+}
+
+.boton:hover {
+    background-color: #77dd77;
+    border: 1px solid #000;
+}
+
+.main {
+    background-color: #ffffff;
+    border: 2px solid #000;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.card {
+    border: 1px solid #666;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    
+}
+
+
+.scroll {
+width: 500px;
+height: 400px;
+overflow: scroll;
+overflow-x: hidden;
+overflow-y: scroll;
+}
+.scroll::-webkit-scrollbar {
+width: 16px;
+height: 16px;
+}
+
+.scroll::-webkit-scrollbar-track {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFElEQVQIW2M4fPz0////GYAYyAIASnoKpV3w4kgAAAAASUVORK5CYII=");
+image-rendering: pixelated;
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
+.scroll::-webkit-scrollbar-track:active {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAEElEQVQIW2No6+pjgAAgCwAWogM9VKrgGQAAAABJRU5ErkJggg==");
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
+.scroll::-webkit-scrollbar-thumb {
+border-top: 1px solid #cccccc;
+border-left: 1px solid #cccccc;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+width: 16px;
+height: 16px;
+background-color: #cccccc;
+z-index: 1;
+}
+
+.scroll::-webkit-scrollbar-corner {
+background-color: #cccccc;
+}
+
+.scroll::-webkit-resizer {
+width: 16px;
+height: 16px;
+background-color: #cccccc;
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAN0lEQVR4Ae3MgQUAMBRDwU5fFF05lb/CARTBw2Ulof0DxPtcwp3hNuEYnjbcEW4TjuFpwx3h9gMWGgZ2Y/PT2gAAAABJRU5ErkJggg==");
+background-position: bottom right;
+background-repeat: no-repeat;
+image-rendering: pixelated;
+}
+
+.scroll::-webkit-scrollbar-button, .scroll::-webkit-scrollbar-button {
+border-top: 1px solid #cccccc;
+border-left: 1px solid #cccccc;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+display: block;
+width: 16px;
+height: 16px;
+background-color: #cccccc;
+image-rendering: pixelated;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+.scroll::-webkit-scrollbar-button:active, .scroll::-webkit-scrollbar-button:active {
+background-position: 2px 2px;
+}
+
+.scroll::-webkit-scrollbar-button:horizontal:decrement, .scroll::-webkit-scrollbar-button:horizontal:decrement {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHklEQVQY02NgoBT8xyX8H5fwf1zCpOjAYwceV1EEAAO2D/HsQ4vsAAAAAElFTkSuQmCC");
+}
+
+.scroll::-webkit-scrollbar-button:horizontal:increment, .scroll::-webkit-scrollbar-button:horizontal:increment {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHUlEQVQY02NgIB/8xy3xH7fEf9wS/0nUQZqrKAYAK44P8ZRmzLQAAAAASUVORK5CYII=");
+}
+
+.scroll::-webkit-scrollbar-button:vertical:decrement, .scroll::-webkit-scrollbar-button:vertical:decrement {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGklEQVR4AWMYxuA/SYphmETFhDX9x4mHGQAAcL4P8dQiMq8AAAAASUVORK5CYII=");
+}
+
+.scroll::-webkit-scrollbar-button:vertical:increment, .scroll::-webkit-scrollbar-button:vertical:increment {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAF0lEQVQY02NgoBf4jwJxSOHQhcNAOgMAWWAP8Rv2U3UAAAAASUVORK5CYII=");
+}
+
+.scroll::-webkit-scrollbar-button:horizontal:increment:start, .scroll::-webkit-scrollbar-button:horizontal:increment:start {
+display: none;
+}
+
+.scroll::-webkit-scrollbar-button:horizontal:decrement:end, .scroll::-webkit-scrollbar-button:horizontal:decrement:end {
+display: none;
+}
+
+.scroll::-webkit-scrollbar-button:vertical:increment:start, .scroll::-webkit-scrollbar-button:vertical:increment:start {
+display: none;
+}
+
+.scroll::-webkit-scrollbar-button:vertical:decrement:end, .scroll::-webkit-scrollbar-button:vertical:decrement:end {
+display: none;
+}
+
+::-webkit-scrollbar-button:active, ::-webkit-scrollbar-button:active {
+border-top: 1px solid #868a8e;
+border-left: 1px solid #868a8e;
+border-bottom: 1px solid #868a8e;
+border-right: 1px solid #868a8e;
+box-shadow: none;
+}
+
+
+
+/* Contenedor que alinea las tarjetas una al lado de la otra */
+.cards-container {
+  display: flex;
+  flex-direction: row;   /* Fila horizontal */
+  flex-wrap: wrap;       /* Si no entran por el ancho, bajan solas */
+  gap: 15px;             /* Espacio de separación entre tarjetas */
+  justify-content: center; /* Las centra en el espacio disponible de tu main */
+  padding: 10px;
+  width: 100%;
+}
+
+/* Tus tarjetas blancas de 180x220px */
+.album-card-white {
+  width: 180px;
+  height: 220px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 12px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.album-card-white:hover {
+  transform: scale(1.03);
+}
+
+.album-image-wrapper {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.album-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.album-text-content {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+  font-family: 'Source Sans 3', sans-serif; /* Usa tu fuente importada */
+}
+
+.album-title {
+  color: #000000;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artist-name {
+  color: #555555;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.text-box {
+    height: 140px;
+}
+
+.marquee-box {
+    height: 50px;
+    padding: 0 5px;
+    overflow: hidden;
+}
+
+.marquee-box marquee {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fotos-box {
+    height: 140px;
+}
+
+
+.footer {
+    background-color: #90EE90; /* Verde claro */
+    height: 40px;
+    border: 2px solid #000;
+}
